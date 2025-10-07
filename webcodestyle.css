@@ -18,7 +18,7 @@
 }
 .hero-message {
     margin-right: 60px;
-    max-width:500px;
+    max-width:450px;
 }
 .main-headline {
     color: #FEC20F;
@@ -26,14 +26,13 @@
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 18px;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 .hero-subtext {
     color: #333333;
     font-family: 'Poppins', cursive;
     font-size: 18px;
-    line-height: 1.45;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 .category-bar {
     position: absolute;
@@ -49,16 +48,18 @@
 .navbar-left {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 .logo {
     height: 65px;
-    margin-right: 4px;
+    margin: 4px;
 }
 .site-name {
     font-size: 29px;
     font-weight: 900;
     color: #FFDF58;
     letter-spacing: 1.5px;
+    font-family: 'Baloo', cursive;
 }
 .navbar-links {
     display: flex;
@@ -87,6 +88,28 @@
 .navbar-links a.book-now:hover{ 
     background: #D0AE1D;
     color: #FFFFFF;
+}
+.navbar-links a.using-link {
+    border-bottom: 3px solid #FFDF58;
+    color: #FFDF58;
+    padding-bottom: 3px;
+}
+/* Mobile Responsive Category Bar */
+@media (max-width: 600px) {
+  .category-bar {
+    position: static;
+    width: 100%;
+    padding: 10px 8px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    align-items: flex-start;
+  }
 }
  /* Pre-care Section */
 body {
@@ -142,7 +165,7 @@ body {
 
 .table p {
     color: #333333;
-    font-family: 'Poppins', cursive;
+    font-family: 'Poppins', cursive; 
     font-size: 16px;
     margin: 0;
 }
@@ -160,7 +183,7 @@ body {
     text-align: center;
     font-weight: 700;
     color: #FFFFFF;
-    font-family: 'Baloo', cursive;
+    font-family: 'Baloo',cursive;
     margin-bottom: 20px;
     margin-top: 0;
 }
@@ -184,12 +207,12 @@ body {
 .note-content p {
     font-size: 14px;
     color: #000000;
-    font-family: 'Poppins', cursive;
+    font-family: 'Poppins',cursive;
     margin: 0;
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 700px){
+@media (max-width: 600px){
     .note-column {
         flex-direction: column;
         gap: 20px;
@@ -263,7 +286,7 @@ body {
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 700px){
+@media (max-width: 600px){
     .pricing {
         flex-direction: column;
         gap: 20px;
@@ -367,11 +390,14 @@ body {
     color: #FFFFFF;
     font-size: 16px;
 }
-.emergency-footer {
+.emergency-footer p {
     color: #FFDF58;
     font-weight: 900;
-    font-family: 'Poppins', cursive;
+    font-family: 'Poppins', cursive; 
+    font-size: 25px;
 }
+
+
 
 
 
