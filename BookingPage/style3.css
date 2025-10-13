@@ -1,180 +1,235 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+html {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Category Bar Section */
 .category-bar {
+  position: static;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.3rem 3rem;
+  box-sizing: border-box;
   background: #B9A479;
-  padding: 20px 48px;
+  z-index: 10;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.logo {
+  height: 4rem;
+  margin: 0.3rem;
+}
+
+.site-name {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #FFDF58;
+  letter-spacing: 0.1rem;
+  font-family: 'Baloo', cursive;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.navbar-links a {
+  font-size: 1.5rem;
+  font-family: 'Baloo', cursive;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-links a.book-now {
+  background: #FFDF58;
+  color: #333333;
+  font-family: 'Baloo', cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 1.3rem;
+  padding: 1rem 1.3rem;
+  cursor: pointer;
+}
+
+.navbar-links a.book-now:hover {
+  background: #D0AE1D;
+  color: #FFFFFF;
+}
+
+/* Headline Section */
+.headline-content {
+  text-align: center;
+  background-color: #EBD2663D;
+  padding: 7.5rem 3rem;
+  margin: 0;
+}
+
+.main-headline {
+  color: #FEC20F;
+  font-family: 'Baloo', cursive;
+  font-size: 3.4rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.subtext {
+  color: #333333;
+  font-family: 'Poppins', cursive;
+  font-size: 1.2rem;
+}
+
+/* Booking Content Section */
+.booking-container {
+  max-width: 40.625rem; 
+  margin: 2rem auto 0 auto;
+  text-align: left;
   box-sizing: border-box;
 }
-.navbar-left {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-.logo {
-    height: 65px;
-    margin: 4px;
-}
-.site-name {
-    font-size: 35px;
-    font-weight: 500;
-    color: #FFDF58;
-    letter-spacing: 1.5px;
-    font-family: 'Baloo', cursive;
-}
-.navbar-links {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-.navbar-links a{
-    font-size:25px;
-    font-family: 'Baloo', cursive;
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: 400;
-    padding: 8px 15px;
-}
-.navbar-links a.book-now {
-    background: #FFDF58;
-    color: #333333;
-    font-family: 'Baloo', cursive;
-    font-size:25px;
-    font-weight: 700;
-    border-radius: 20px;
-    padding: 15px 20px;
-    cursor: pointer;
-}
-    
-.navbar-links a.book-now:hover{ 
-    background: #D0AE1D;
-    color: #FFFFFF;
-}
-/* Headline section */
-.headline-content {
-    text-align: center;
-    background-color: #EBD2663D;
-    padding: 120px;
-    margin: 0; 
-}
-.main-headline {
-    color: #FEC20F;
-    font-family: 'Baloo', cursive;
-    font-size: 80px;
-    font-weight: 900;
-    margin: 0;
-}
-.subtext {
-    color: #333333;
-    font-family: 'Poppins', cursive;
-    font-size: 20px;
-}
-/* Content*/
-.booking-container {
-    text-align: left;
-  max-width: 650px;
-  margin: 32px auto;
-}
+
 .booking-title {
   color: #FEC20F;
-  font-size: 55px;
-  font-weight: 700;
   font-family: 'Baloo', cursive;
-  margin: 0px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
 }
+
 .booking-desc {
-    font-family: 'Poppins', cursive;
-    font-size: 18px;
+  font-family: 'Poppins', cursive;
+  font-size: 1.125rem;
   color: #333333;
-  margin-bottom: 20px;
-  margin-top: 0px;
+  margin: 0 0 1.25rem 0;
 }
-/* Form content*/
-form { 
-    background-color: #F5F0E6;
-    border-radius: 20px;
-    padding: 30px;
+
+/* Form Content */
+form {
+  background: #F5F0E6;
+  border-radius: 1.3rem;
+  padding: 1.8rem 1rem 1.3rem 1rem;
+  box-sizing: border-box;
 }
 
 form h2 {
-    color: #333333;
-    font-family: 'Poppins', cursive;
-    font-weight: 600;
-    margin-top: 15px;
-    margin-bottom: 14px;
-    font-size: 35px;
+  color: #333333;
+  font-family: 'Poppins', cursive;
+  font-weight: 600;
+  margin: 1rem 0 0.875rem 0;
+  font-size: 2.2rem;
 }
+
 .row {
-    display: flex;
-    gap: 50px;
-    margin-bottom: 15px;
+  display: flex;
+  gap: 3.125rem; /* 50px */
+  margin-bottom: 0.9rem;
+  flex-wrap: wrap;
 }
+
 .row > div {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
+
 label {
-    font-size: 15px;
-    font-weight: 600;
-    font-family: 'Poppins', cursive;
-    margin-bottom: 8px;
-    display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Poppins', cursive;
+  margin-bottom: 0.5rem;
+  display: block;
 }
-input, select, textarea {
-    font-family: 'Poppins', cursive;
-    padding: 9px;
-  border-radius: 7px;
-  border: 1px solid;
+
+input,select,textarea {
+  font-family: 'Poppins', cursive;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
   background: #FFFFFF;
   margin-bottom: 0;
+  font-size: 1rem;
+  box-sizing: border-box;
 }
+
 textarea {
-  min-height: 80px;
+  min-height: 5rem;
   resize: vertical;
   width: 100%;
-  box-sizing: border-box;
   margin-top: 0;
 }
 .submit-button {
-margin-top: 10px;
+  margin-top: 0.6rem;
   width: 100%;
   background: #FFDF58;
   color: #232321;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 700;
   font-family: 'Baloo', cursive;
   border: none;
-  border-radius: 7px;
-  padding: 8px;
+  border-radius: 0.85rem;
+  padding: 0.5rem 0;
   cursor: pointer;
 }
+
 .submit-button:hover {
-    background: #D0AE1D;
-    color: #FFFFFF;
+  background: #D0AE1D;
+  color: #FFFFFF;
 }
-/*Mobile responsive*/
+
+/* Responsive Section */
+@media (max-width: 900px) {
+html {
+  font-size: 14px;
+}
+
+.main-headline {
+  font-size: 2.8rem;
+}
+
+
+.booking-container {
+  padding: 0.5rem 0.5rem;
+}
+}
 @media (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+
   .category-bar {
     position: static;
     width: 100%;
-    padding: 10px 8px;
+    padding: 0.5rem 0.5rem;
     box-sizing: border-box;
     flex-direction: column;
     align-items: flex-start;
   }
+
   .navbar-links {
     flex-direction: column;
-    gap: 8px;
+    gap: 0.5rem;
     width: 100%;
     align-items: flex-start;
   }
+
+  .row {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
 }
-
-
-

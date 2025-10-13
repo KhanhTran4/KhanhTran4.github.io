@@ -1,415 +1,413 @@
-/* Heading */
+/* Nav bar section */
+html { 
+    font-size: 16px;
+}
+
+body { 
+    background-color: #F5F0E6; 
+    margin: 0; 
+}
+
 .hero-section {
-    position: relative;
-    width: 100%;
-    background-image: url("background.png");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    position: relative;
-    z-index: 1;
+  position: relative;
+  width: 100%;
+  background-image: url("background.png");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  z-index: 1;
 }
 .hero-content {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 900px;
-    position: relative;
-    z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
 }
-.hero-message {
-    margin-right: 48px;
-    max-width: 450px;
+.hero-message { 
+    margin-right: 3rem; 
+    max-width: 28rem; 
 }
 .main-headline {
-    color: #FEC20F;
-    font-family: 'Baloo', cursive;
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 18px;
+  color: #FEC20F;
+  font-family: 'Baloo', cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+  margin-top: 0;
 }
 .hero-subtext {
-    color: #333333;
-    font-family: 'Poppins', cursive;
-    font-size: 18px;
+  color: #333333;
+  font-family: 'Poppins', cursive;
+  font-size: 1.2rem;
 }
 .category-bar {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 48px;
-    font-family: 'Baloo', cursive;
-    background: transparent;
-    box-sizing: border-box;
-    position: relative;
-    z-index: 10;
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem 3rem;
+  font-family: 'Baloo', cursive;
+  background: transparent;
+  box-sizing: border-box;
+  z-index: 10;
 }
-.navbar-left {
-    display: flex;
+.navbar-left { 
+    display: flex; 
     align-items: center;
-    gap: 15px;
+    gap: 0.9rem; 
 }
-.logo {
-    height: 65px;
-    margin: 4px;
+.logo { 
+    height: 4rem; 
+    margin: 0.3rem; 
 }
 .site-name {
-    font-size: 35px;
-    font-weight: 500;
-    color: #FFDF58;
-    letter-spacing: 1.5px;
-    font-family: 'Baloo', cursive;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #FFDF58;
+  letter-spacing: 0.1rem;
+  font-family: 'Baloo', cursive;
 }
-.navbar-links {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+.navbar-links { 
+    display: flex; 
+    align-items: center; 
+    gap: 2.5rem; 
 }
-.navbar-links a{
-    font-size:25px;
-    font-family: 'Baloo', cursive;
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: 400;
-    padding: 8px 15px;
+.navbar-links a {
+  font-size: 1.5rem;
+  font-family: 'Baloo', cursive;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
 }
 .navbar-links a.book-now {
-    background: #FFDF58;
-    color: #333333;
-    font-family: 'Baloo', cursive;
-    font-size:25px;
-    font-weight: 700;
-    border-radius: 20px;
-    padding: 15px 20px;
-    cursor: pointer;
+  background: #FFDF58;
+  color: #333333;
+  font-family: 'Baloo', cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 1.3rem;
+  padding: 1rem 1.3rem;
+  cursor: pointer;
 }
-    
-.navbar-links a.book-now:hover{ 
-    background: #D0AE1D;
-    color: #FFFFFF;
+.navbar-links a.book-now:hover {
+     background: #D0AE1D; 
+     color: #FFFFFF;
 }
 .navbar-links a.using-link {
-    border-bottom: 3px solid #FFDF58;
-    color: #FFDF58;
-    padding-bottom: 3px;
+  border-bottom: 0.2rem solid #FFDF58;
+  color: #FFDF58;
+  padding-bottom: 0.2rem;
 }
-/* Mobile Responsive Category Bar */
+/* Pre-care section */
+.precare-title {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2.8rem;
+}
+.precare-title h2 {
+  font-family: 'Baloo', cursive;
+  font-size: 3.4rem;
+  color: #FEC20F;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+}
+.precare-table {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.4rem;
+  max-width: 56rem;
+  margin: 0 auto;
+}
+.table {
+  background: #FFFFFF;
+  border-radius: 1.3rem;
+  min-height: 9.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.8rem 1rem 1.3rem 1rem;
+}
+.allicon { 
+    width: 3.5rem; 
+    height: 3.5rem; 
+    margin-bottom: 1rem; 
+    object-fit: contain; 
+}
+.table h3 {
+  color: #FEC20F;
+  font-family: 'Baloo', cursive;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  margin-top: 0.4rem;
+}
+.table p { 
+    color: #333333; 
+    font-family: 'Poppins', cursive; 
+    font-size: 1rem; 
+    margin: 0; 
+}
+.note-box {
+  background: #FEC20F;
+  max-width: 37.5rem;
+  margin: 2.5rem auto;
+  border-radius: 1.3rem;
+  padding: 1.5rem;
+}
+.note-box h4 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-family: 'Baloo', cursive;
+  margin-bottom: 1.3rem;
+  margin-top: 0;
+}
+.note-column { 
+    display: flex; 
+    justify-content: space-between; 
+    gap: 2.5rem; 
+}
+.note-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.noteicon { 
+    width: 2.5rem; 
+    height: auto; 
+    margin-bottom: 0.5rem; 
+}
+.note-content p {
+  font-size: 0.8rem;
+  color: #000000;
+  font-family: 'Poppins', cursive;
+  margin: 0;
+}
+/* Pricing Section*/
+.pricing { 
+    display: flex; 
+    justify-content: center; 
+    gap: 1.4rem; 
+    flex-wrap: wrap; 
+}
+.pricing-box {
+  background: #FFFFFF;
+  border-radius: 1.3rem;
+  min-height: 12.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.8rem 1rem 1.3rem 1rem;
+  width: 15rem;
+}
+.pricing-box h4 {
+  color: #000000;
+  font-family: 'Baloo', cursive;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.3rem;
+  margin-top: 0.1rem;
+}
+.pricing-box ul { 
+    text-align: left; 
+    margin: 1.1rem 0; 
+    padding-left: 1.3rem; 
+    font-family: 'Poppins', cursive; 
+}
+.pricing-box button {
+  background: #FFDF58;
+  color: #000000;
+  border-radius: 1.3rem;
+  padding: 0.6rem 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Baloo', cursive;
+}
+.pricing-box button:hover { 
+    background: #D0AE1D; 
+    color: #FFFFFF; 
+}
+.price-number { 
+    font-size: 1.8rem; 
+    font-weight: 700; 
+    color: #FEC20F; 
+    font-family: 'Baloo', cursive; 
+}
+.price-text { 
+    font-size: 1rem; 
+    font-family: 'Poppins', cursive; 
+}
+/* Location section */
+.location-box {
+  background: #FFFFFF;
+  border-radius: 1.3rem;
+  max-width: 43.8rem;
+  margin: 1.5rem auto;
+  padding-bottom: 2.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.map { 
+    width: 5rem; 
+    padding-top: 1.3rem; 
+}
+.address-subtitle {
+  font-family: 'Baloo', cursive;
+  font-size: 1.6rem;
+  color: #000000;
+  font-weight: 800;
+  text-align: center;
+}
+.address-text {
+  font-family: 'Poppins', cursive;
+  font-size: 1.3rem;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 1.1rem;
+}
+.open-hours {
+  color: #FEC20F;
+  font-family: 'Baloo', cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.footer {
+  background: #B9A479;
+  padding: 1.8rem 3rem;
+}
+.footer-content {
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.logofooter { 
+    height: 4.6rem; 
+    margin-bottom: 0.4rem; 
+}
+.sitename-footer {
+  font-size: 1.8rem;
+  font-family: 'Baloo', cursive;
+  font-weight: 500;
+  color: #FFDF58;
+  margin-bottom: 0.3rem;
+}
+.footer-tagline { 
+    font-size: 1rem; 
+    font-family: 'Poppins', cursive; 
+    color: #FFFFFF; 
+}
+.footer-sections h4 {
+  font-family: 'Baloo', cursive;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+.footer-columns { 
+    display: flex; 
+    gap: 4rem; 
+    margin: 2.5rem 0; 
+}
+.service-section { 
+    flex: 1; 
+}
+.contact-section { 
+    flex: 1; 
+}
+.footer-columns h4 {
+  font-size: 1.8rem;
+  font-family: 'Baloo', cursive;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.service-sections p,
+.contact-sections p {
+  margin-bottom: 0.5rem;
+  font-family: 'Poppins', cursive;
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+.emergency-footer p {
+  color: #FFDF58;
+  font-weight: 800;
+  font-family: 'Poppins', cursive;
+  font-size: 1.2rem;
+}
+
+/* Responsive Section */
+@media (max-width: 900px) {
+  html { 
+    font-size: 14px; 
+}
+.hero-message {
+    margin: 0;
+}
+}
+
 @media (max-width: 600px) {
+  html { font-size: 12px; }
   .category-bar {
     position: static;
     width: 100%;
-    padding: 10px 8px;
+    padding: 0.5rem 0.5rem;
     box-sizing: border-box;
     flex-direction: column;
     align-items: flex-start;
   }
   .navbar-links {
     flex-direction: column;
-    gap: 8px;
+    gap: 0.5rem;
     width: 100%;
     align-items: flex-start;
   }
-}
- /* Pre-care Section */
-body {
-    background-color: #F5F0E6;
-    margin: 0;
-}
-.precare-title {
-    text-align: center;
-    margin-top: 35px;
-    margin-bottom: 45px;
-}
-
-.precare-title h2 {
-    font-family: 'Baloo', cursive;
-    font-size: 54px;
-    color: #FEC20F;
-    font-weight: 900px;
-    letter-spacing: 1.5px;
-}
-
-.precare-table {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-.table {
-    background: #FFFFFF;
-    border-radius: 20px;
-    min-height: 150px;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    padding: 28px 18px 20px 18px;
-}
-
-.allicon {
-    width: 56px;
-    height: 56px;
-    margin-bottom: 15px;
-    object-fit: contain;
-}
-
-.table h3 {
-    color: #FEC20F;
-    font-family: 'Baloo', cursive;
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    margin-top: 6px;
-}
-
-.table p {
-    color: #333333;
-    font-family: 'Poppins', cursive; 
-    font-size: 16px;
-    margin: 0;
-}
-
-/* Note Section */
-.note-box {
-    background: #FEC20F;
-    max-width:600px;
-    margin: 40px auto;
-    border-radius: 20px;
-    padding: 25px;
-}
-.note-box h4 {
-    font-size: 25px;
-    text-align: center;
-    font-weight: 700;
-    color: #FFFFFF;
-    font-family: 'Baloo',cursive;
-    margin-bottom: 20px;
-    margin-top: 0;
-}
-.note-column {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-}
-.note-content {
-    flex: 1;
-    display: flex;
+  .precare-table {
+    margin: 0 0.8rem ;
+  }
+  .note-box {
+    margin-right: 0.8rem ;
+    margin-left: 0.8rem ;
+  }
+  .note-column {
     flex-direction: column;
+    gap: 1.3rem;
+  }
+  .note-content {
     align-items: center;
     text-align: center;
-}
-.noteicon {
-    width: 40px;
-    height: auto;
-    margin-bottom: 10px;
-}
-.note-content p {
-    font-size: 14px;
-    color: #000000;
-    font-family: 'Poppins',cursive;
-    margin: 0;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 600px){
-    .note-column {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .note-content {
-        align-items: center;
-        text-align: center;
-    }
-}
-
-/* Pricing Section */
-.pricing {
-    display: flex;
-    justify-content: center;
-    gap: 22px;
-    flex-wrap: wrap;
-}
-.pricing-box {
-    background: #FFFFFF;
-    border-radius: 20px;
-    min-height: 200px;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    padding: 28px 18px 20px 18px;
-    width: 240px
-}
-.pricing-box h4 {
-    color: #000000;
-    font-family: 'Baloo', cursive;
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    margin-top: 2px;
-}
-.pricing-box ul{
-    text-align: left;
-    margin: 18px 0;
-    padding-left: 20px;
-    font-family: 'Poppins', cursive;
-}
-.pricing-box button {
-    background: #FFDF58;
-    color: #000000;
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-weight: bold;
-    cursor: pointer;
-    font-family: 'Baloo', cursive;
-}
-.pricing-box button:hover {
-    background: #D0AE1D;
-    color: #FFFFFF;
-}
-.price-number {
-    font-size: 30px;
-    font-weight: 00;
-    color: #FEC20F;
-    font-family: 'Baloo', cursive;
-}
-.price-text {
-    font-size: 15px;
-    font-family: 'Poppins', cursive;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 600px){
-    .pricing {
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-    }
-}
-
-/* Location Section */
-.location-box {
-    background: #FFFFFF;
-    border-radius: 20px;
-    max-width: 700px;
-    margin: 24px auto;
-    padding-bottom: 44px;
-    display: flex;
+  }
+  .pricing {
     flex-direction: column;
+    gap: 1.3rem;
     align-items: center;
+  }
+  .footer-content {
+    flex-direction: column;
+    max-width: 95vw;
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+  .footer-columns {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  .contact-section {
+    min-width: 0;
+  }
 }
-.map {
-    width: 80px;
-    padding-top: 20px;
-}
-.address-subtitle {
-    font-family: 'Baloo', cursive;
-    font-size: 26px;
-    color: #000000;
-    font-weight: 800;
-    text-align: center;
-}
-.address-text {
-    font-family: 'Poppins', cursive;
-    font-size: 20px;
-    color: #333333;
-    text-align: center;
-    margin-bottom: 18px;
-}
-.open-hours {
-    color: #FEC20F;
-    font-family: 'Baloo', cursive;
-    font-size: 25px;
-    font-weight: 700;
-    text-align: center;
-}
-/*Footer Section*/
-.footer {
-    background: #B9A479;
-    padding: 30px 48px;
-}
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-}
-.logofooter {
-    height: 75px;
-    margin-bottom: 6px;
-}
-.sitename-footer {
-    font-size: 30px;
-    font-family: 'Baloo', cursive;
-    font-weight: 500;
-    color: #FFDF58;
-    margin-bottom: 5px;
-}
-.footer-tagline {
-    font-size: 16px;
-    font-family: 'Poppins', cursive;
-    color: #FFFFFF;
-}
-.footer-sections h4{
-    font-family: 'Baloo', cursive;
-    font-size: 25px;
-    color: #FFFFFF;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-.footer-columns {
-    display: flex;
-    gap: 70px;
-    margin: 40px 0;
-}
-.service-section {
-    flex: 1;
-}
-.contact-section {
-    flex: 1;
-}
-.footer-columns h4{
-    font-size: 28px;
-    font-family: 'Baloo', cursive;
-    font-weight: 700;
-    color: #FFFFFF;
-}
-.service-sections div, .contact-sections div {
-    margin-bottom: 10px;
-    font-family: 'Poppins', cursive;
-    color: #FFFFFF;
-    font-size: 16px;
-}
-.emergency-footer p {
-    color: #FFDF58;
-    font-weight: 800;
-    font-family: 'Poppins', cursive; 
-    font-size: 25px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
