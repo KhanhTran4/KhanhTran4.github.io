@@ -104,6 +104,12 @@ body {
   color: #FFDF58;
   padding-bottom: 0.2rem;
 }
+.interact-button {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem; 
+}
+
 .interact-button a:hover {
   color: #FFDF58;
   padding-bottom: 0.2rem;
@@ -227,7 +233,8 @@ body {
     padding-left: 1.3rem; 
     font-family: 'Poppins', cursive; 
 }
-.pricing-box button {
+.pricing-box a {
+    text-decoration: none;
   background: #FFDF58;
   color: #000000;
   border-radius: 1.3rem;
@@ -236,7 +243,7 @@ body {
   cursor: pointer;
   font-family: 'Baloo', cursive;
 }
-.pricing-box button:hover { 
+.pricing-box a:hover { 
     background: #D0AE1D; 
     color: #FFFFFF; 
 }
@@ -379,6 +386,10 @@ body {
     gap: 0.5rem;
     width: 100%;
     align-items: flex-start;
+  } 
+  .interact-button {
+    flex-direction: column;
+    gap: 0rem;
   }
   .precare-table {
     margin: 0 0.8rem ;

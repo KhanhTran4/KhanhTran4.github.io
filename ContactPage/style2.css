@@ -74,6 +74,12 @@ body {
   color: #FFFFFF;
 }
 
+.interact-button {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
 .interact-button a:hover {
   color: #FFDF58;
   padding-bottom: 0.2rem;
@@ -251,6 +257,11 @@ form textarea {
     gap: 0.5rem;
     width: 100%;
     align-items: flex-start;
+  }
+
+ .interact-button {
+    flex-direction: column;
+    gap: 0rem ;
   }
 
   .container {
