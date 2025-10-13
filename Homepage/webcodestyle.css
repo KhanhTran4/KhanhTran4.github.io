@@ -104,6 +104,10 @@ body {
   color: #FFDF58;
   padding-bottom: 0.2rem;
 }
+.interact-button a:hover {
+  color: #FFDF58;
+  padding-bottom: 0.2rem;
+}
 /* Pre-care section */
 .precare-title {
     text-align: center;

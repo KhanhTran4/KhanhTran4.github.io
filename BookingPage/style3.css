@@ -74,6 +74,11 @@ body {
   color: #FFFFFF;
 }
 
+.interact-button a:hover {
+  color: #FFDF58;
+  padding-bottom: 0.2rem;
+}
+
 /* Headline Section */
 .headline-content {
   text-align: center;

@@ -74,6 +74,11 @@ body {
   color: #FFFFFF;
 }
 
+.interact-button a:hover {
+  color: #FFDF58;
+  padding-bottom: 0.2rem;
+}
+
 .navbar-links a.using-link {
   border-bottom: 0.2rem solid #FFDF58;
   color: #FFDF58;
