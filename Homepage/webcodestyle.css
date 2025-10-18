@@ -46,7 +46,9 @@ body {
 }
 .category-bar {
   position: absolute;
-  width: 100vw;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,6 +57,7 @@ body {
   background: transparent;
   box-sizing: border-box;
   z-index: 10;
+  overflow-x: hidden; 
 }
 .navbar-left { 
     display: flex; 
@@ -262,7 +265,7 @@ body {
   background: #FFFFFF;
   border-radius: 1.3rem;
   max-width: 43.8rem;
-  margin: 1.5rem auto;
+  margin: 1.5rem 0.8rem 1.5rem 0.8rem;
   padding-bottom: 2.8rem;
   display: flex;
   flex-direction: column;

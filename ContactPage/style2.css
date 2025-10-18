@@ -14,7 +14,7 @@ body {
 /* Category Bar Section */
 .category-bar {
   position: static;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -243,19 +243,19 @@ form textarea {
     font-size: 12px;
   }
 
-  .category-bar {
+  .navbar-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+    .category-bar {
     position: static;
     width: 100%;
     padding: 0.5rem 0.5rem;
     box-sizing: border-box;
     flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
     align-items: flex-start;
   }
 
